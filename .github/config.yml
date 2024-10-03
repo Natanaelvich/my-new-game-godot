@@ -1,0 +1,32 @@
+# Configuration for GitHub repository
+
+# Repository settings
+repository:
+  # A short description of the repository that will show up on GitHub
+  description: A collection of game sprites managed with Godot
+
+  # A comma-separated list of topics to set on the repository
+  topics: godot, sprites, game-development, assets
+
+# Label settings
+labels:
+  - name: bug
+    color: d73a4a
+    description: Something isn't working
+  - name: enhancement
+    color: a2eeef
+    description: New feature or request
+  - name: documentation
+    color: 0075ca
+    description: Improvements or additions to documentation
+
+# Issue template settings
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Community Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here.
+
+# Pull request settings
+pull_request_template:
+  - template: .github/PULL_REQUEST_TEMPLATE.md
