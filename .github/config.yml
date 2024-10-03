@@ -8,6 +8,9 @@ repository:
   # A comma-separated list of topics to set on the repository
   topics: godot, sprites, game-development, assets
 
+  # The repository license
+  license: MIT
+
 # Label settings
 labels:
   - name: bug

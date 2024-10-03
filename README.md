@@ -10,6 +10,9 @@ This project uses the Godot engine to manage and import sprites. The .import fil
 - **Description**: A collection of game sprites managed with Godot
 - **Tags**: godot, sprites, game-development, assets
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Contact
 [Your name or username]
 [Your email or other contact information]
