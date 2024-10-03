@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://dndtivf2sgllb"]
+[gd_scene load_steps=10 format=3 uid="uid://dndtivf2sgllb"]
 
 [ext_resource type="PackedScene" uid="uid://cwy3qm2pjpou7" path="res://scenes/player.tscn" id="1_1uq1q"]
 [ext_resource type="Texture2D" uid="uid://cbua2onscidsk" path="res://assets/sprites/world_tileset.png" id="1_fiw0e"]
+[ext_resource type="Texture2D" uid="uid://cmj4l6vegfj8a" path="res://assets/sprites/heart.jpg" id="2_efgh3"]
 [ext_resource type="PackedScene" uid="uid://butyy60n60ujw" path="res://scenes/platform.tscn" id="3_tun2t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tvkiw"]
@@ -441,7 +442,7 @@ _data = {
 "move": SubResource("Animation_5tdx5")
 }
 
-[node name="game" type="Node2D"]
+[node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_aqxpv")
@@ -454,11 +455,6 @@ position = Vector2(83, -69)
 [node name="player" parent="." instance=ExtResource("1_1uq1q")]
 position = Vector2(1, -43)
 
-[node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(-1, 5)
-zoom = Vector2(4, 4)
-position_smoothing_enabled = true
-
 [node name="Platform2" parent="." instance=ExtResource("3_tun2t")]
 position = Vector2(432, -43)
 
@@ -466,3 +462,37 @@ position = Vector2(432, -43)
 libraries = {
 "": SubResource("AnimationLibrary_j1cuc")
 }
+
+[node name="HealthUI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HealthUI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -92.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 42.0
+grow_horizontal = 0
+alignment = 2
+
+[node name="Heart1" type="TextureRect" parent="HealthUI/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_efgh3")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Heart2" type="TextureRect" parent="HealthUI/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_efgh3")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Heart3" type="TextureRect" parent="HealthUI/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_efgh3")
+expand_mode = 2
+stretch_mode = 5
