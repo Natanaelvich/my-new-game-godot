@@ -1,6 +1,6 @@
 # Sprite Project
 
-![Game Screenshot](print.png)
+![Game Screenshot](.github/print.png)
 
 ## Description
 This project is a collection of sprites for use in game development. Currently, it includes a heart sprite that can be used to represent lives, health, or other related elements in games.
